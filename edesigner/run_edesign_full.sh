@@ -1,5 +1,4 @@
 #!/bin/bash
-conda activate edesign
 [ ! -d ./resources ] && mkdir ./resources
 [ ! -d ./comps ] && mkdir ./comps
 [ ! -d ./data ] && mkdir ./data
