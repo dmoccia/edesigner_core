@@ -81,6 +81,6 @@ if __name__ == '__main__':
                         all_dfs.append(df_all.copy())
                 all_dfs = pd.concat(all_dfs)
                 int_dfs = pd.concat(int_dfs)
-                all_dfs.to_csv(os.path.join(args.output_folder, args.token + '_' + str(lib_id) + '_C' + str(cycle + 1) + '_all.csv'), index=False)
-                int_dfs.to_csv( os.path.join(args.output_folder, args.token + '_' + str(lib_id) + '_C' + str(cycle + 1) + '_int.csv'), index=False)
+                all_dfs.to_csv(os.path.join(args.output_folder, args.token + '_' + str(lib_id) + '_C' + str(cycle + 1) + '_all.smi'), index=False, header=False, sep=" ",)
+                int_dfs.to_csv( os.path.join(args.output_folder, args.token + '_' + str(lib_id) + '_C' + str(cycle + 1) + '_int.smi'), index=False, header=False, sep=" ",)
     log.update('OK')
